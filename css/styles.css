@@ -1,0 +1,105 @@
+/* Reset de margem, padding e fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body {
+  text-align: center; /* Centraliza o conteúdo na página */
+  padding: 2rem; /* Adiciona espaçamento interno */
+  min-height: 100vh; /* Garante que o corpo da página tenha altura mínima de 100% da altura da viewport */
+  background-image: linear-gradient(180deg, #db4444 0%, #3f24dd 98%); /* Gradiente de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+/* Estilos para títulos secundários */
+h2 {
+  margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+/* Estilos para o formulário de multiplicação */
+#multiplication-form {
+  display: flex; /* Exibe os elementos em linha */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+  max-width: 300px; /* Largura máxima do formulário */
+  margin: 1rem auto; /* Margem externa */
+  padding: 1rem; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo */
+  border-radius: 1rem; /* Arredonda as bordas */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilos para os controles do formulário */
+.form-control {
+  display: flex; /* Exibe os elementos em linha */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  width: 100px; /* Largura dos controles */
+  margin: 0 1rem; /* Margem externa */
+}
+
+.form-control label {
+  margin-bottom: 0.6rem; /* Espaçamento inferior */
+  font-size: 0.8rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+
+.form-control input {
+  margin-bottom: 1rem; /* Espaçamento inferior */
+  flex: 1; /* Cresce para preencher o espaço disponível */
+  padding: 0.6rem 0.4rem; /* Espaçamento interno */
+  border: 1px solid #333; /* Borda sólida */
+  width: 50px; /* Largura do controle de entrada */
+  border-radius: 5px; /* Arredonda as bordas */
+  text-align: center; /* Alinhamento do texto ao centro */
+}
+
+/* Estilos para o botão de envio do formulário */
+#multiplication-form input[type="submit"] {
+  max-height: 50px; /* Altura máxima */
+  padding: 0.6rem 1.2rem; /* Espaçamento interno */
+  width: 200px; /* Largura */
+  color: #fff; /* Cor do texto */
+  background-color: #333; /* Cor de fundo */
+  border: 1px solid #333; /* Borda sólida */
+  border-radius: 5px; /* Arredonda as bordas */
+  cursor: pointer; /* Altera o cursor ao passar por cima */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilos para a área de exibição da tabuada */
+#multiplication-operations {
+  display: flex; /* Exibe os elementos em linha */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  max-width: 300px; /* Largura máxima */
+  margin: 1rem auto; /* Margem externa */
+  padding: 2rem 1rem; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  border-radius: 1rem; /* Arredonda as bordas */
+}
+
+/* Estilos para as linhas da tabuada */
+#multiplication-operations .row {
+  display: flex; /* Exibe os elementos em linha */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  border: 1px solid #ccc; /* Borda sólida */
+  border-bottom: none; /* Remove a borda inferior */
+  padding: 0.5rem; /* Espaçamento interno */
+  width: 150px; /* Largura */
+}
+
+/* Estilos para a última linha da tabuada */
+#multiplication-operations .row:last-child {
+  border: 1px solid #ccc; /* Borda sólida */
+}
+
+/* Estilos para os resultados da tabuada */
+#multiplication-operations .result {
+  margin-left: 0.4rem; /* Margem à esquerda */
+}

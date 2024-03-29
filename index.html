@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Definição do conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configuração da viewport para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Tabuada JS</title>
+    <!-- Link para o arquivo de estilos CSS local -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Título e formulário para entrada de dados -->
+    <h2>Digite o número e confirme para gerar uma tabuada</h2>
+    <form id="multiplication-form">
+        <!-- Campo para inserir o número base -->
+        <div class="form-control">
+            <label for="number">Tabuada do:</label>
+            <input type="number" name="number" id="number" placeholder="3">
+        </div>
+        <!-- Campo para definir até qual número será multiplicado -->
+        <div class="form-control">
+            <label for="multiplicator">Mutiplicar até:</label>
+            <input type="number" name="multiplicator" id="multiplicator" value="10">
+        </div>
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="Calcular" />
+    </form>
+    <!-- Div para exibir a tabuada calculada -->
+    <div id="multiplication-table">
+        <!-- Título da tabuada -->
+        <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
+        <!-- Área para exibir as operações da tabuada -->
+        <div id="multiplication-operations">
+            <p>Informe um número para calcular uma tabuada...</p>
+        </div>
+    </div>
+    <!-- Script JavaScript para funcionalidades interativas -->
+    <script src="./js/scripts.js" defer></script>
+</body>
+
+</html>
